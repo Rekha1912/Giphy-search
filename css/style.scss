@@ -1,0 +1,100 @@
+// media query
+
+@mixin mobile-only {
+    @media only screen and (max-width:320px) 
+    {
+        @content;
+    }
+}
+// variables
+
+$textColor: black;
+
+// header
+
+header
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .container 
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color:bisque;
+        width: auto;
+        height: auto;
+        padding: 5vw;
+        align-items: baseline;
+        .box1
+        {
+            flex: 3;
+        }
+        .box2
+        {
+            flex: 8;
+            text-align: right;
+        }
+    }
+    .nav-bar
+    {
+        li 
+        {
+            display: inline-block;
+        }
+        .btn 
+        {
+            flex-wrap: nowrap;
+            border: 1px solid transparent;
+            cursor: pointer;
+            padding: 10px 10px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 8px; 
+        }
+        .btn:hover 
+        {
+            background:pink;
+            border-color: white;
+            text-decoration: underline;
+        }
+        .btn-nav 
+        {
+            color: red;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) 
+{
+    .container
+    {
+        flex-direction: column;
+        justify-content: center;
+        background: lightcyan;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .li
+    {
+        display:flex;
+    }
+    .box1
+    {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        flex-direction: column;
+        flex: 1;
+    }
+    .box2
+    {
+        width: 100%;
+        flex: 2;
+    }
+    .btn-nav
+    {
+        text-align: center;
+    }
+}
+
