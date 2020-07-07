@@ -4,23 +4,20 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Giphy search engine </title>
-            
             <link rel="stylesheet" href="css/style.css" type="text/css">
+            <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+            <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
             
-            <!-- font style link-->
-            <link href='https://fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css'>
-                
             <script type="text/javascript" src="javascript/script.js"> </script>
-            
     </head>
     <body>
         <header>
             <div class="container">
                 <div class="box1"> 
-                    <a> GIPHY SEARCH ENGINE </a>
+                    <h4> GIPHY SEARCH </h4>
                 </div>
                 <div class="box2">
-                    <nav class="nav nav-bar">
+                    <nav class="nav">
                         <ul>
                           <li><a href="#" class="btn btn-nav">Sign In </a></li>
                           <li><a href="#" class="btn btn-nav">Contact US</a></li>
@@ -30,26 +27,30 @@
                  </div>
             </div>
         </header>
-        
         <main>
             <div class="container-search">
                 <form>
                     <div class="form-group">
-                        <label for="search"> <h2> Search </h2></label>
+                        <label for="search" id="searchlabel"> <h2> SEARCH: </h2></label>
                         <input type="text" id="search" class="input-control" name="search">
+                        <button type="submit" class="iconbtn" value="Submit"><i class="fas fa-search"></i></button>
+                        
+                    </div>
+                    <div class="countbox">
+                        <label for="count" id="countlabel"> <h2> COUNT: </h2></label>
+                        <input type="number" id="count" class="input-control" name="count">                      
                     </div>
                 </form>
             </div>
-
             <div class="grid-container">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>  
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>7</div>
-                <div>8</div>
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>  
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
             </div>
         </main>
         
