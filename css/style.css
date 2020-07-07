@@ -184,4 +184,30 @@ body {
     float: none;
   }
 }
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  background-color: #121212;
+  padding: 10px;
+  grid-gap: 5px;
+}
+
+@media only screen and (max-width: 450px) {
+  .grid-container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+.grid-container .grid-item {
+  background-color: #DBDBDB;
+  border: 1px solid #121212;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
