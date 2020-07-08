@@ -157,21 +157,25 @@ body
     display: grid;
     grid-template-columns: auto auto auto auto;
     background-color: #121212;
-    padding: 10px;
-    grid-gap: 5px;
+    padding: 5px;
+    grid-gap: 2px;
     @include mobile
     {
         grid-template-columns: auto;
     }
     .grid-item 
     {
-        background-color:#DBDBDB;
-        border: 1px solid #121212;
-        border-radius: 5px;
-        padding: 10px;
+        background-color:transparent;
+        padding: 5px;
         font-size: 30px;
         text-align: center;   
+        /* img
+        {
+            width:200px;
+            height: 200px;
+        } */
     }
+    
 }
 
 
