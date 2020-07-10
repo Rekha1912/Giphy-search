@@ -5,7 +5,7 @@ $(function(){
         //alert(userInput);
 
         $.ajax({
-            url: 'http://api.giphy.com/v1/gifs/search?api_key=OMbgFHquYiRsGpqYqZMjETxWI0Lkij8y&q='+userInput
+            url: 'http://api.giphy.com/v1/gifs/search?api_key=OMbgFHquYiRsGpqYqZMjETxWI0Lkij8y&q='+userInput+'&limit='+ $("#count").val()
         }).done(function(response){
                 $("#grid").empty();
                 let resarray = response.data;              
