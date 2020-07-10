@@ -1,5 +1,5 @@
 @mixin mobile {
-    @media only screen and (max-width :450px) {
+    @media only screen and (max-width :320px) {
         @content;
     }
 }
@@ -12,64 +12,69 @@ body
 // Header
 .container
 {
-    background: #121212;
     display: flex;
-    flex-wrap: nowrap;
-    width:auto;
-    height:auto;
-    align-items: baseline;
     padding: 1vw;
-    color: white;
-    font-family: 'Cinzel Decorative',sans-serif;
-        @include mobile 
+    font-family: 'Chela One', sans-serif;
+    letter-spacing: 2px;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+        @include mobile
         {
             flex-direction: column;
-            background-color: pink;
             text-align: center;
-            flex-wrap: nowrap;
-            clear: both;   
+            clear: both;
             padding: 0px;
-            
         }
     .box1
     {   
-        display: flex;   
-        flex-grow: 1;
         float: left;
-        font-size: x-large;
-        font-size: 4vw;
-        padding-left: 3vw;
-        font-weight: bolder;
-        @include mobile
+        flex-grow: 1;
+        .imgG
         {
-         float: none;   
+            width: 15vw;
+            height: 15vw;
+            @include mobile
+            {
+                display: none;
+            }
         }
     }
     .box2
     {
-        display: flex;
-        flex-grow: 1;
-        float: right;
-        padding-left: 23vw;
-        padding-right: 0px;
+        float:left;
+        flex-grow: 9;
+        font-size: xx-large;
         @include mobile
         {
-            float: none;
+            font-size: large;
+            justify-content: center;
         }
-       .nav
-        {            
-            flex-wrap: nowrap;
-            list-style: none;
+    }
+    .box3
+    {
+        float: right;
+        flex-grow: 9;
+        ul
+        {
+            font-size: large;
+            text-align: right;
             @include mobile
             {
-                //  display:none;
+                text-align: center;
             }
-            li 
+            li
             {
+                list-style: none;
                 display: inline-block;
-
+                @include mobile
+                {
+                    display: list-item;
+                }
             }
         }
+    
     }
 }
 .btn 
@@ -81,21 +86,21 @@ body
     border: 1px solid transparent;
     cursor: pointer;
     padding: 12px 10px;
-    font-size: 1.313em;
     font-weight: bold;
     border-radius: 3px;
     text-decoration: none;
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 .btn:hover 
 {
     background: none;
-    border-color: white;
+    border-color: black;
+    border-width: 3px;
     text-decoration:none;
 }
 .btn-nav 
 {
-    color: white;
+    color:black;
 }
 .iconbtn
 {
@@ -126,7 +131,7 @@ body
         justify-content: center;
         padding: 5px;
         letter-spacing: 2px;
-        font-family: 'Cinzel Decorative',sans-serif;
+        font-family: 'Chela One',sans-serif;
         float: left;
         padding: 2vw;
         letter-spacing: 2px;
@@ -141,7 +146,7 @@ body
         justify-content: center;
         padding: 5px;
         letter-spacing: 2px;
-        font-family: 'Cinzel Decorative',sans-serif;
+        font-family: 'Chela One',sans-serif;
         float: right;
         padding: 2vw;
         letter-spacing: 2px;
@@ -157,26 +162,50 @@ body
     display: grid;
     grid-template-columns: auto auto auto auto;
     background-color: #121212;
-    padding: 5px;
-    grid-gap: 2px;
+    justify-content: stretch,center;
+    padding-left: 5vw;
+    grid-gap: 1vw;
     @include mobile
     {
         grid-template-columns: auto;
+        justify-content: center;
     }
     .grid-item 
     {
         background-color:transparent;
-        padding: 5px;
-        font-size: 30px;
-        text-align: center;   
         /* img
         {
             width:200px;
             height: 200px;
         } */
-    }
-    
+    }   
 }
+.footbar
+{
+    .footnav
+    {
+        ul
+        {
+            font-family:'Chela One',sans-serif;
+            letter-spacing: 1px;
+            text-align: center;
+            justify-content: center;
+            
+            li
+            {
+                padding-left: 3vw;
+                padding-right: 3vw;
+                list-style: none;
+                display: inline-block;
+            }   @include mobile
+                {
+                    padding-top: 1vw;
+                    padding-bottom: 1vw;
+                }
+        }
+    }
+}
+
 
 
 
