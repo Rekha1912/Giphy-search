@@ -87,7 +87,7 @@ body
     cursor: pointer;
     padding: 12px 10px;
     font-weight: bold;
-    border-radius: 3px;
+    border-radius: 5px;
     text-decoration: none;
     transition: all 0.5s ease 0s;
 }
@@ -102,22 +102,14 @@ body
 {
     color:black;
 }
-.iconbtn
-{
-    background-color:#121212;
-    border: none;
-    color: white;
-    padding: 12px 16px;
-    font-size: 16px;
-    cursor: pointer;
-}
+
 // Main Search
 .container-search
 {
     display: flex;
     justify-content: center;
     clear: both;
-    padding: 3vw;
+    padding: 2vw;
     @include mobile
     {
         flex-direction: column;
@@ -129,11 +121,10 @@ body
     {
         display: flex;
         justify-content: center;
-        padding: 5px;
+        padding: 1.5vw;
         letter-spacing: 2px;
         font-family: 'Chela One',sans-serif;
         float: left;
-        padding: 2vw;
         letter-spacing: 2px;
         @include mobile
         {
@@ -144,11 +135,10 @@ body
     {
         display: flex;
         justify-content: center;
-        padding: 5px;
+        padding: 1.5vw;
         letter-spacing: 2px;
         font-family: 'Chela One',sans-serif;
         float: right;
-        padding: 2vw;
         letter-spacing: 2px;
         @include mobile
         {
@@ -156,13 +146,42 @@ body
         }
     }
 }
+.findbutton 
+{
+    display:flex;
+    justify-content:center;
+    background: aqua;
+    margin-left:43%;
+    margin-right:43%;
+    border-radius:10px;
+    @include mobile
+    {
+        margin-left:30%;
+        margin-right:30%;
+    }
+    .iconbtn
+    {
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.5s ease 0s;
+        .btn
+        {
+            background: aqua;
+        }
+    }
+}
+
 // Main grid
 .grid-container
 {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background-color: #121212;
+    background-color: #DBDBDB;
     justify-content: stretch,center;
+    padding: 1vw;
     padding-left: 5vw;
     grid-gap: 1vw;
     @include mobile
@@ -190,7 +209,6 @@ body
             letter-spacing: 1px;
             text-align: center;
             justify-content: center;
-            
             li
             {
                 padding-left: 3vw;

@@ -11,7 +11,6 @@ $(function(){
                 let resarray = response.data;              
                     $.each(resarray, function( index, value ) {
                         // alert( index + ": " + value.url );
-                        
                         $("#grid").append('<div class="grid-item"><img src='+value.images.fixed_width_downsampled.url+' alt="gif"/></div>')
                 });
 

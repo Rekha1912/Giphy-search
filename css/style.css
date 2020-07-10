@@ -105,7 +105,7 @@ body {
   cursor: pointer;
   padding: 12px 10px;
   font-weight: bold;
-  border-radius: 3px;
+  border-radius: 5px;
   text-decoration: none;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -122,15 +122,6 @@ body {
   color: black;
 }
 
-.iconbtn {
-  background-color: #121212;
-  border: none;
-  color: white;
-  padding: 12px 16px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
 .container-search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,7 +130,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   clear: both;
-  padding: 3vw;
+  padding: 2vw;
 }
 
 @media only screen and (max-width: 320px) {
@@ -163,11 +154,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 5px;
+  padding: 1.5vw;
   letter-spacing: 2px;
   font-family: 'Chela One',sans-serif;
   float: left;
-  padding: 2vw;
   letter-spacing: 2px;
 }
 
@@ -184,11 +174,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 5px;
+  padding: 1.5vw;
   letter-spacing: 2px;
   font-family: 'Chela One',sans-serif;
   float: right;
-  padding: 2vw;
   letter-spacing: 2px;
 }
 
@@ -198,15 +187,50 @@ body {
   }
 }
 
+.findbutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: aqua;
+  margin-left: 43%;
+  margin-right: 43%;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 320px) {
+  .findbutton {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+
+.findbutton .iconbtn {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.findbutton .iconbtn .btn {
+  background: aqua;
+}
+
 .grid-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto auto auto;
       grid-template-columns: auto auto auto auto;
-  background-color: #121212;
+  background-color: #DBDBDB;
   -webkit-box-pack: stretch,center;
       -ms-flex-pack: stretch,center;
           justify-content: stretch,center;
+  padding: 1vw;
   padding-left: 5vw;
   grid-gap: 1vw;
 }
