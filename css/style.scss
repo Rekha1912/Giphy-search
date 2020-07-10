@@ -3,13 +3,14 @@
         @content;
     }
 }
+$fontcolor:#51291e;
 body
 {
     margin:0px;
-    background-color: #DBDBDB;
+    background-color:#fcffeb;
+    color:$fontcolor;
     
 }
-// Header
 .container
 {
     display: flex;
@@ -46,6 +47,11 @@ body
         float:left;
         flex-grow: 9;
         font-size: xx-large;
+        a
+        {
+            text-decoration: none;
+            color:$fontcolor;
+        }
         @include mobile
         {
             font-size: large;
@@ -61,7 +67,7 @@ body
             font-size: large;
             text-align: right;
             @include mobile
-            {
+            {   
                 text-align: center;
             }
             li
@@ -94,27 +100,26 @@ body
 .btn:hover 
 {
     background: none;
-    border-color: black;
+    border-color: #51291e;
     border-width: 3px;
     text-decoration:none;
 }
 .btn-nav 
 {
-    color:black;
+    color:$fontcolor;
 }
-
-// Main Search
 .container-search
 {
     display: flex;
     justify-content: center;
     clear: both;
-    padding: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
     @include mobile
     {
         flex-direction: column;
         justify-content: center;
-        padding:0px;
+        padding:2vw;
         clear: both;
     }
     .form-group
@@ -150,9 +155,10 @@ body
 {
     display:flex;
     justify-content:center;
-    background: aqua;
-    margin-left:43%;
-    margin-right:43%;
+    background: none;
+    margin-left:45%;
+    margin-right:45%;
+    border:5px solid #51291e;
     border-radius:10px;
     @include mobile
     {
@@ -161,25 +167,22 @@ body
     }
     .iconbtn
     {
-        border: none;
+        border:none;
         border-radius: 5px;
-        padding: 10px 20px;
+        padding: 5px 20px;
         text-align: center;
         cursor: pointer;
         transition: all 0.5s ease 0s;
         .btn
         {
-            background: aqua;
+            background: none;
         }
     }
 }
-
-// Main grid
 .grid-container
 {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background-color: #DBDBDB;
     justify-content: stretch,center;
     padding: 1vw;
     padding-left: 5vw;
@@ -201,6 +204,11 @@ body
 }
 .footbar
 {
+    padding-top: 5vw;
+    @include mobile
+    {
+        padding-top:3vw;
+    }
     .footnav
     {
         ul

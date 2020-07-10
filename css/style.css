@@ -1,6 +1,7 @@
 body {
   margin: 0px;
-  background-color: #DBDBDB;
+  background-color: #fcffeb;
+  color: #51291e;
 }
 
 .container {
@@ -58,6 +59,11 @@ body {
   font-size: xx-large;
 }
 
+.container .box2 a {
+  text-decoration: none;
+  color: #51291e;
+}
+
 @media only screen and (max-width: 320px) {
   .container .box2 {
     font-size: large;
@@ -113,13 +119,13 @@ body {
 
 .btn:hover {
   background: none;
-  border-color: black;
+  border-color: #51291e;
   border-width: 3px;
   text-decoration: none;
 }
 
 .btn-nav {
-  color: black;
+  color: #51291e;
 }
 
 .container-search {
@@ -130,7 +136,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   clear: both;
-  padding: 2vw;
+  padding-top: 2vw;
+  padding-bottom: 1vw;
 }
 
 @media only screen and (max-width: 320px) {
@@ -142,7 +149,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 0px;
+    padding: 2vw;
     clear: both;
   }
 }
@@ -194,9 +201,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: aqua;
-  margin-left: 43%;
-  margin-right: 43%;
+  background: none;
+  margin-left: 45%;
+  margin-right: 45%;
+  border: 5px solid #51291e;
   border-radius: 10px;
 }
 
@@ -210,7 +218,7 @@ body {
 .findbutton .iconbtn {
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 5px 20px;
   text-align: center;
   cursor: pointer;
   -webkit-transition: all 0.5s ease 0s;
@@ -218,7 +226,7 @@ body {
 }
 
 .findbutton .iconbtn .btn {
-  background: aqua;
+  background: none;
 }
 
 .grid-container {
@@ -226,7 +234,6 @@ body {
   display: grid;
   -ms-grid-columns: auto auto auto auto;
       grid-template-columns: auto auto auto auto;
-  background-color: #DBDBDB;
   -webkit-box-pack: stretch,center;
       -ms-flex-pack: stretch,center;
           justify-content: stretch,center;
@@ -252,6 +259,16 @@ body {
             width:200px;
             height: 200px;
         } */
+}
+
+.footbar {
+  padding-top: 5vw;
+}
+
+@media only screen and (max-width: 320px) {
+  .footbar {
+    padding-top: 3vw;
+  }
 }
 
 .footbar .footnav ul {
