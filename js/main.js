@@ -1,6 +1,5 @@
 $(function(){
     
-    //mobile button
     $("#myMenu").click(function () {
         if ($("#myLinks").css("display") === "block") {
             $("#myLinks").css("display", "none");
@@ -14,7 +13,6 @@ $(function(){
         }
     });
 
-    //search
     $("#submit").click(function(){
         let userInput = $("#search").val();
         $.ajax({
