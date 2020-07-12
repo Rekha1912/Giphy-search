@@ -212,7 +212,7 @@ body
     padding: 1vw;
     padding-top: 3vw;
     padding-left: 5vw;
-    grid-gap: 1vw;
+    grid-gap: 0.5vw;
     @include mobile
     {
         grid-template-columns: auto;
@@ -221,11 +221,6 @@ body
     .grid-item 
     {
         background-color:transparent;
-        /* img
-        {
-            width:200px;
-            height: 200px;
-        } */
     }   
 }
 .footbar
