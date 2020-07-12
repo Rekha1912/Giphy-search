@@ -6,7 +6,7 @@
 $fontcolor:#51291e;
 body
 {
-    margin:0px;
+    margin:3px;
     background-color:#fcffeb;
     color:$fontcolor;
     
@@ -62,6 +62,32 @@ body
     {
         float: right;
         flex-grow: 9;
+        .mobMenu
+        {
+            display: none;
+        }
+        @include mobile
+        {
+            .nav
+            {
+                display: none;
+            }
+            .mobMenu
+            {
+                display: inline;
+                .icon
+                {
+                    color:#51291e;
+                    cursor: pointer;
+                    transition: all 0.5s ease 0s;
+                }
+                #myLinks
+                {
+                    display: none;
+                }
+            }
+        }
+       
         ul
         {
             font-size: large;
@@ -80,7 +106,6 @@ body
                 }
             }
         }
-    
     }
 }
 .btn 
@@ -185,6 +210,7 @@ body
     grid-template-columns: auto auto auto auto;
     justify-content: stretch,center;
     padding: 1vw;
+    padding-top: 3vw;
     padding-left: 5vw;
     grid-gap: 1vw;
     @include mobile
@@ -231,12 +257,4 @@ body
         }
     }
 }
-
-
-
-
-
-
-
-
 

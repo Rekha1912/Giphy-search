@@ -1,5 +1,5 @@
 body {
-  margin: 0px;
+  margin: 3px;
   background-color: #fcffeb;
   color: #51291e;
 }
@@ -78,6 +78,28 @@ body {
   -webkit-box-flex: 9;
       -ms-flex-positive: 9;
           flex-grow: 9;
+}
+
+.container .box3 .mobMenu {
+  display: none;
+}
+
+@media only screen and (max-width: 320px) {
+  .container .box3 .nav {
+    display: none;
+  }
+  .container .box3 .mobMenu {
+    display: inline;
+  }
+  .container .box3 .mobMenu .icon {
+    color: #51291e;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+  }
+  .container .box3 .mobMenu #myLinks {
+    display: none;
+  }
 }
 
 .container .box3 ul {
@@ -238,6 +260,7 @@ body {
       -ms-flex-pack: stretch,center;
           justify-content: stretch,center;
   padding: 1vw;
+  padding-top: 3vw;
   padding-left: 5vw;
   grid-gap: 1vw;
 }
