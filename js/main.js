@@ -8,7 +8,12 @@ $(function(){
             $("#myLinks").css("display", "block");
         }
     });
-    
+    $(document.body).click(function(evt){
+        if(evt.target.id !== undefined && evt.target.id !== "menuIcon"){
+            $("#myLinks").css("display", "none");
+        }
+    });
+
     //search
     $("#submit").click(function(){
         let userInput = $("#search").val();
@@ -18,7 +23,6 @@ $(function(){
                 $("#grid").empty();
                 let resarray = response.data;              
                     $.each(resarray, function( index, value ) {
-                        // alert( index + ": " + value.url );
                         $("#grid").append('<div class="grid-item"><img src='+value.images.fixed_width_downsampled.url+' alt="gif"/></div>')
                 });
                 let giflength = response.data.length;                 
@@ -28,4 +32,3 @@ $(function(){
 });
 
 
-//style="width:'+value.images.fixed_width_downsampled.width+'px;height:'+value.images.fixed_width_downsampled.height+'px" 
