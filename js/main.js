@@ -1,5 +1,5 @@
 $(function(){
-    
+
     $("#myMenu").click(function () {
         if ($("#myLinks").css("display") === "block") {
             $("#myLinks").css("display", "none");
@@ -7,8 +7,8 @@ $(function(){
             $("#myLinks").css("display", "block");
         }
     });
-    $(document.body).click(function(evt){
-        if(evt.target.id !== undefined && evt.target.id !== "menuIcon"){
+    $(document.body).click(function(event){
+        if(event.target.id !== undefined && event.target.id !== "menuIcon"){
             $("#myLinks").css("display", "none");
         }
     });
