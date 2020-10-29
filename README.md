@@ -17,3 +17,4 @@ Future improvements:
 2. Direct download of Gifs will be provided.
 3. Creating news Gifs by user will be available.
 
+Project Hosted URL - http://rekhaproject.epizy.com/
